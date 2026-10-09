@@ -24,7 +24,7 @@ export default function App() {
 
       <View style={styles.cartao}>
         <Text style={styles.cartaoTitulo}>Biblioteca</Text>
-        <Link href="/app-bublioteca" style={styles.link}>
+        <Link href="/app-biblioteca" style={styles.link}>
           Abrir →
         </Link>
       </View>
