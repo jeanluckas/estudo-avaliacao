@@ -104,7 +104,9 @@ export default function App() {
                     <View style={styles.caixaLista}>
                         <View>
                             <Text style={styles.item}>Titulo: {item.titulo}</Text>
-                            <Text style={styles.item}>Nota: {item.nota}</Text>
+                            <Text style={[ styles.item, { color: item.nota >= 7 ? "green" : "red" }]}>
+                                Nota: {Number(item.nota).toFixed(1)}
+                            </Text>
                         </View>
                         <View>
                             <Button title="Editar" color="#000000" onPress={() => editar(item)} />
